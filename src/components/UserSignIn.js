@@ -1,7 +1,13 @@
-import { useRef } from 'react';
+import { useRef, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import UserContext from '../Context/UserContext';
+
+
 const UserSignIn = (props) => {
+
+  const { actions } = useContext(UserContext);
+
   // State
   const username = useRef(null);
   const password = useRef(null);
@@ -11,7 +17,7 @@ const UserSignIn = (props) => {
   // Event Handlers
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.signIn(username.current.value, password.current.value);
+    actions.signIn(username.current.value, password.current.value);
     navigate("/");
   }
 
