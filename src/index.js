@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 
 import { UserProvider } from "./Context/UserContext";
+import { ThemeProvider } from "./Context/ThemeContext";
 
 import "./styles/global.css";
 import "./styles/new.css";
@@ -14,7 +15,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <UserProvider>
-        <App /> 
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
       </UserProvider>
     </BrowserRouter>
   </React.StrictMode>

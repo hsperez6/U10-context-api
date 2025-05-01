@@ -1,10 +1,18 @@
+import { useContext } from 'react';
+
 import { Link } from 'react-router-dom';
+
+import ThemeContext from '../Context/ThemeContext';
+
 
 import Nav from './Nav';
 
-const Header = (props) => {
+const Header = () => {
+
+  const { accentColor } = useContext(ThemeContext);
+
   return (
-    <div className="header" style={{ background: props.accentColor }}>
+    <div className="header" style={{ background: accentColor }}>
       <div className="bounds">
         <Link to="/">
           <h1 className="header--logo">MyApp</h1>
