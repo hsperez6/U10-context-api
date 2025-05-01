@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 import ThemeContext from '../Context/ThemeContext';
 
-
 import Nav from './Nav';
 
 const Header = () => {

@@ -2,8 +2,6 @@ import { useContext } from "react";
 
 import ThemeContext from '../../Context/ThemeContext';
 
-
-
 const FontSize = () => {
   const { accentColor, fontPercentage, actions } = useContext(ThemeContext);
 

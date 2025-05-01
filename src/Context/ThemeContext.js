@@ -27,7 +27,6 @@ export const ThemeProvider = (props) => {
         accentColor,
         fontPercentage,
         actions: {
-          setIsDarkMode,
           toggleDarkMode,
           setAccentColor,
           setFontPercentage,

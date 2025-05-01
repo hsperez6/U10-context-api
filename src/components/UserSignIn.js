@@ -5,7 +5,7 @@ import UserContext from '../Context/UserContext';
 import ThemeContext from '../Context/ThemeContext';
 
 
-const UserSignIn = (props) => {
+const UserSignIn = () => {
 
   const { actions } = useContext(UserContext);
   const { accentColor } = useContext(ThemeContext);
